@@ -20,6 +20,12 @@ const ReposPage = async() => {
             {repos.map((repo) => (
                 <li href = {`/code/repos/${repo.name}`}>
                     <h3>{repo.name}</h3>
+                    <p>{repo.description}</p>
+                    <div className="repo-details">
+                        <span><FaStar/> {repo.stargazers_count}</span>
+                        <span><FaCodeBranch /> {repo.forks_count}</span>
+                        <span> <FaEye /> {repo.watchers_count}</span>
+                    </div>
                 </li>
             ))}
         </ul>
