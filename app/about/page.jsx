@@ -1,3 +1,7 @@
+export const metadata = {
+  title: 'About Allan Kiche'
+};
+
 import React from 'react'
 
 const AboutPage = () => {
