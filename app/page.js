@@ -3,7 +3,8 @@ import React from 'react'
 const HomePage = () => {
   return (
     <div>
-      Homepage
+     <h1>Welcome to my Github Projects List</h1>
+     ul
     </div>
   )
 };
