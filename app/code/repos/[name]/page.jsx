@@ -8,6 +8,7 @@ const RepoPage = ({params: {name}}) => {
         
         <Repo name = {name}/>
         
+        
     </div>
   )
 }
