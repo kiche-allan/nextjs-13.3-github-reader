@@ -19,7 +19,15 @@ const Repo = async( {name}) => {
     <div className="card-stats">
         <div className="card-stat">
             <FaStar/>
-            <span></span>
+            <span>{repo.stargazers_count}</span>
+        </div>
+        <div className="card-stat">
+            <FaCodeBranch/>
+            <span>{repo.forks_count}</span>
+        </div>
+        <div className="card-stat">
+            <FaEye/>
+            <span>{repo.watchers_count}</span>
         </div>
     </div>
     </>
