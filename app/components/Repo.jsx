@@ -4,7 +4,13 @@ import {FaStar, FaCodeBranch, FaEye} from "react-icons/fa"
 
 
 async function fetchRepo(name) {
-    const res = await fetch(`https://api.github.com/repos/kiche-allan/${name}`);
+    const res = await fetch(`https://api.github.com/repos/kiche-allan/${name}`,
+    {
+        next: {
+        revalidate: 50,
+    }
+  },
+  );
         const repo = await res.json();
         return repo;
 }
