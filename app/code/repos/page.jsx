@@ -7,7 +7,7 @@ import Link from 'next/link';
 async function fetchRepos() {
       const res = await fetch('https://api.github.com/users/kiche-allan/repos', {
         next: {
-            revalidate: 50
+            revalidate: 50,
         }
       });
 

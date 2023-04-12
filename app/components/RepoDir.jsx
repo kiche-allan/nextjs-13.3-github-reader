@@ -2,7 +2,13 @@ import React from 'react'
 import Link from 'next/link';
 async function fetchRepoContents(name) {
   await new Promise((resolve) => setTimeout(resolve, 3000));
-    const res = await fetch(`https://api.github.com/repos/kiche-allan/${name}/contents`);
+    const res = await fetch(`https://api.github.com/repos/kiche-allan/${name}/contents`,
+    {
+      next: {
+      revalidate: 50,
+  }
+},
+    );
     const contents = await res.json();
     return contents;
 }
