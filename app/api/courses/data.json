@@ -12,27 +12,27 @@
         "link": "https://github.com/kiche-allan/Github-Workshop-"
     },
     {
-        "id": 1,
-        "title" : "Data-Structures-In-Python",
-        "description": "Leetcode and everything in Data Structures and Algorithms using Python",
-        "link": "https://github.com/kiche-allan/Data-Structures-In-Python"
+        "id": 3,
+        "title" : "Millers-app        ",
+        "description": "An app built in Flutter and Firebase. Its meant to solve the problem of economic empowerment amongst maize farmers who cannot have access too market and are exploited by middlemen. Its in development",
+        "link": "https://github.com/kiche-allan/Millers-app"
     },
     {
-        "id": 1,
-        "title" : "Data-Structures-In-Python",
-        "description": "Leetcode and everything in Data Structures and Algorithms using Python",
-        "link": "https://github.com/kiche-allan/Data-Structures-In-Python"
+        "id": 4,
+        "title" : "Lunahacks2.o-Challenges",
+        "description": "A repository for lunahacks challenges - a 24 hour hackathon held on Kabarak University 0n the 26th and 27th February 2023",
+        "link": "https://github.com/kiche-allan/Lunahacks2.o-Challenges"
     },
     {
-        "id": 1,
-        "title" : "Data-Structures-In-Python",
-        "description": "Leetcode and everything in Data Structures and Algorithms using Python",
-        "link": "https://github.com/kiche-allan/Data-Structures-In-Python"
+        "id": 5,
+        "title" : "Workout-Plan---MERN-Stack",
+        "description": "A workout plan app built using MERN stack",
+        "link": "https://github.com/kiche-allan/Workout-Plan---MERN-Stack"
     },
     {
-        "id": 1,
-        "title" : "Data-Structures-In-Python",
-        "description": "Leetcode and everything in Data Structures and Algorithms using Python",
-        "link": "https://github.com/kiche-allan/Data-Structures-In-Python"
+        "id": 6,
+        "title" : "React-router-6-with-authentication",
+        "description": "An app that handles routing using react router version 6",
+        "link": "https://github.com/kiche-allan/React-router-6-with-authentication"
     }
 ]
