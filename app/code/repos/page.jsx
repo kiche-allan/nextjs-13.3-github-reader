@@ -5,7 +5,11 @@ import Link from 'next/link';
 
 
 async function fetchRepos() {
-      const res = await fetch('https://api.github.com/users/kiche-allan/repos');
+      const res = await fetch('https://api.github.com/users/kiche-allan/repos', {
+        next: {
+            revalidate: 50
+        }
+      });
 
       await new Promise((resolve) => setTimeout(resolve, 1000));
       const repos = await res.json();

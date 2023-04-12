@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Link from 'next/link';
 async function fetchRepoContents(name) {
   await new Promise((resolve) => setTimeout(resolve, 3000));
     const res = await fetch(`https://api.github.com/repos/kiche-allan/${name}/contents`);
@@ -16,7 +16,8 @@ const RepoDir  = async ({ name }) => {
       <ul>
         {dirs.map((dir) => (
           <li key={dir.path}>
-            <Link href = {`/code/repos/${name}/${dir.path}`}/></li>
+            <Link href = {`/code/repos/${name}/${dir.path}`}>{dir.path}</Link>
+        </li>
         ))}
       </ul>
     </>
