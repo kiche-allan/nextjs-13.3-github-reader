@@ -8,9 +8,20 @@ async function fetchCourses() {
     const courses = await response.json();
     return courses;
 }
-const Courses = () => {
+const Courses = async () => {
+    const courses = await fetchCourses();
+
   return (
-    <div>Courses</div>
+    <div className="courses">
+        {courses.map((course) => (
+            <div key={course.id} className="card">
+            <h2>{course.title}</h2>
+            <small>Level: {course.level}</small>
+            <p>{courses.description}</p>
+            <Link href = {course.link}> Go To Course</Link>
+        </div>
+        ))}
+    </div>
   )
 }
 
