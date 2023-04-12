@@ -18,7 +18,7 @@ const Courses = async () => {
             <h2>{course.title}</h2>
             <small>Level: {course.level}</small>
             <p>{courses.description}</p>
-            <Link href = {course.link}> Go To Course</Link>
+            <Link href = {course.link} target = '_blank' className = 'btn'> Go To Course</Link>
         </div>
         ))}
     </div>
