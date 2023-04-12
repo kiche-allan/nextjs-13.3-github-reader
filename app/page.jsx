@@ -20,7 +20,13 @@ const HomePage = () => {
     }
 
     fetchCourses();
-  })
+  }, []);
+
+  if (loading) {
+    return <LoadingPage />
+  }
+
+
   return (
     <div>
      <h1>Welcome to my Github Projects List</h1>
