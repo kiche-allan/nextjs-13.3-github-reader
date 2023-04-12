@@ -18,8 +18,8 @@ export async function POST(request){
     
     }
 
-    console.log(title, description, level, link);
+    courses.push(newCourse);
 
-    return NextResponse.json({ message: 'Course created'});
+    return NextResponse.json({ courses});
 
 }
